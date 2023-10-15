@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input id="display" type="number">
+   <button onclick="startFunc()">Count down</button>
+   <div id="dis"></div> 
+
+
+   <script type="text/javascript">
+let a;
+function myFunc() {
+   count=display.value;
+   count++; 
+   display.value=count;
+   console.log(count);
+   if (count<=0) {
+      clearInterval(a)
+      
+   }
+}
+function startFunc() {
+   a=setInterval(myFunc,1000)
+   
+
+}
+
+// a=setInterval(myFunc,1000)
+
+
+
+
+
+
+
+   //   let Count=10;
+      //  let  decreamentInterval=1000;
+      
+      // function decreamentFunc() {
+      //    let count=display.value;
+      //    const intervalid=setInterval(decreamentFunc,decreamentInterval)
+      //    console.log(Count);
+      // display.value=Count
+      //    Count--;
+      //    if (Count<0) {
+      //       clearInterval(intervalid);
+
+            
+      //    }
+
+         
+      // }
+      
+
+
+
+
+
+
+
+
+
+//     function myFunc() {
+//         console.log("good morning");
+//     }
+//  let a= setInterval(myFunc,1000);
+//  function stopFunc() {
+//     clearInterval(a);
+    
+    
+//  }
+
+
+
+
+ 
+
+
+
+
+   
+
+
+
+
+   </script>
+</body>
+</html>
